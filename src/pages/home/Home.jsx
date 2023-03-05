@@ -9,7 +9,19 @@ import Table from "../../components/table/Table";
 const Home = () => {
   return (
     <div className="home">
-      <Sidebar />
+     <h1>dasdasdad</h1>
+    </div>
+  );
+};
+
+export default Home;
+
+
+/*
+
+Todo esto es el admin page
+
+ <Sidebar />
       <div className="homeContainer">
         <Navbar />
         <div className="widgets">
@@ -27,8 +39,4 @@ const Home = () => {
           <Table />
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Home;
+*/
