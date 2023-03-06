@@ -41,7 +41,7 @@ import {AuthContext} from "../../context/AuthContext"
 
 
   
-/* Con esta funcion registramos nuevos usuarios*/
+/*
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -50,7 +50,7 @@ import {AuthContext} from "../../context/AuthContext"
   .then((userCredential) => {
     // Signed in
     const user = userCredential.user;
-    dispatch({type:"LOGIN", payload:user})
+    
     navitage("/")
   })
   .catch((error) => {
@@ -58,6 +58,23 @@ import {AuthContext} from "../../context/AuthContext"
   });
 };
 
+
+
+<form onSubmit={handleRegister}>
+              <h1>Registar</h1>
+        <input
+          type="email"
+          placeholder="Correo"
+          onChange={(e) => setEmailr(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Contraseña"
+          onChange={(e) => setPasswordr(e.target.value)}
+        />
+        <button type="submit">Login</button>
+      </form>
+      
 /* ///////////////////////////////////////////////////////*/
 
 
@@ -84,20 +101,7 @@ import {AuthContext} from "../../context/AuthContext"
 
       
 
-      <form onSubmit={handleRegister}>
-              <h1>Registar</h1>
-        <input
-          type="email"
-          placeholder="Correo"
-          onChange={(e) => setEmailr(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          onChange={(e) => setPasswordr(e.target.value)}
-        />
-        <button type="submit">Login</button>
-      </form>
+      
     </div>
   );
 };

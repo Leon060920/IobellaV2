@@ -9,7 +9,21 @@ import Table from "../../components/table/Table";
 const Home = () => {
   return (
     <div className="home">
-     <h1>dasdasdad</h1>
+     <Sidebar />
+      <div className="homeContainer">
+        <Navbar />
+        <div className="widgets">
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
+        </div>
+        <div className="charts">
+          <Featured />
+          <Chart title="Ultimos 3 meses" aspect={2 / 1} />
+        </div>
+       
+      </div>
     </div>
   );
 };
