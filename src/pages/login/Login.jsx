@@ -84,25 +84,26 @@ import {AuthContext} from "../../context/AuthContext"
       
       <form onSubmit={handleLogin}>
               <h1>Login</h1>
+              <br/>
         <input
           type="email"
           placeholder="Correo"
           onChange={(e) => setEmail(e.target.value)}
         />
+        
         <input
           type="password"
           placeholder="Contraseña"
           onChange={(e) => setPassword(e.target.value)}
         />
+        <br/>
         <button type="submit">Login</button>
         {error && <span>El usuario o contraseña son incorrectos</span>}
       </form>
 
 
-      
-
-      
     </div>
   );
 };
 export default Login
+
